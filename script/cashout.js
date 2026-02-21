@@ -6,7 +6,6 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     const cashoutNumber = cashoutNumberInput.value;
     if (cashoutNumber.length !== 11){
         alert("Invalid agent number! Please enter a valid 11-digit agent number.");
-        return;
     }
 
     // 2- get the amount, [validate, convart to number]
