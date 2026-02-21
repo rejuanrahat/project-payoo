@@ -1,4 +1,4 @@
-// Masine id => input value 
+// Mashine id => input value 
 
 function getValueFromInput(id) {
     const input = document.getElementById(id);
@@ -6,7 +6,7 @@ function getValueFromInput(id) {
     return value;
 }
 
-//Masine => balance
+//Mashine => balance
 
 function getBalance() {
     const balanceElement = document.getElementById("balance");
@@ -14,9 +14,22 @@ function getBalance() {
     return Number(balance);
 }
 
-// Masine value => stt balance
+// Mashine value => stt balance
 
 function setBalance(value) {
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
+}
+
+// Mashine id => hide all => show id
+
+function showOnly(id) {
+    const addmoney = document.getElementById("add-money");
+    const cashout = document.getElementById("Cashout");
+
+    addmoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+
+    const selected =  document.getElementById(id);
+    selected.classList.remove("hidden");
 }
