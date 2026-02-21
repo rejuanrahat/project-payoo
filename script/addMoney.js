@@ -27,7 +27,26 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
             at ${new Date().toLocaleTimeString()} 
             Your new balance is ${newBalance}`);
         setBalance(newBalance);
+
+        // history-container ke dhore nie asbo
+
+        const historyContainer = document.getElementById("history-container");
+        // new div create korbo
+
+        const newHistory = document.createElement("div");
+        // new div e inner html add korbo
+
+        newHistory.innerHTML = `<div class="transection-card p-5 bg-base-100">
+            Money added successfully! 
+            from ${bankAcount} account. account number ${accno} 
+            at ${new Date().toLocaleTimeString()} 
+            Your new balance is ${newBalance}
+            </div>`;
+        // history-container er vitore new div ta append korbo
+
+        historyContainer.appendChild(newHistory);
     }
+
     else {
         alert("Invalid pin! Please try again.");
         return;
