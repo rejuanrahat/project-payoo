@@ -92,6 +92,43 @@
         </div>
     </section>
 
+    <section id="add-money w-11/12 mx-auto py-5">
+        <h2 class="text-xl font-bold mb-5 w-11/12 mx-auto">Add Money</h2>
+
+        <div class="form pt-10 w-11/12 mx-auto">
+            <div class="card bg-base-100 w-full shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-bold">Select Bank</label>
+                        <select id="add-money-bank" class="select select-bordered w-full rounded-full bg-base-200">
+                            <option disabled selected>Select a Bank</option>
+                            <option value="islamic">Islamic Bank</option>
+                            <option value="ucb">UCB Bank</option>
+                            <option value="sonali">Sonali Bank</option>
+                        </select>
+                        <label class="label text-neutral font-bold">Bank Account Number</label>
+                        <input id="add-money-number" type="text" maxlength="11" minlength="11"
+                            class="input rounded-full bg-base-200 w-full" placeholder="Enter Bank Account Number" />
+
+                        <br>
+
+                        <label class="label text-neutral font-bold">Amount To Add</label>
+                        <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full"
+                            placeholder="Enter Amount To Add" />
+
+                        <br>
+
+                        <label class="label text-neutral font-bold">4 Digit Pin</label>
+                        <input type="password" maxlength="4" id="add-money-pin"
+                            class="input input rounded-full bg-base-200 w-full" placeholder="Enter 4 digit pin" />
+                        <div></div>
+                        <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="Cashout" class="w-11/12 mx-auto py-5">
         <h2 class="text-xl font-bold mb-5">Cashout</h2>
 
@@ -112,8 +149,8 @@
                         <br>
 
                         <label class="label text-neutral font-bold">4 Digit Pin</label>
-                        <input type="password" maxlength="4" id="cashout-pin" class="input input rounded-full bg-base-200 w-full"
-                            placeholder="Enter 4 digit pin" />
+                        <input type="password" maxlength="4" id="cashout-pin"
+                            class="input input rounded-full bg-base-200 w-full" placeholder="Enter 4 digit pin" />
                         <div></div>
                         <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
                     </fieldset>
@@ -122,7 +159,7 @@
         </div>
     </section>
 
-    
+
 
 
     <script src="script/masine.js"></script>
